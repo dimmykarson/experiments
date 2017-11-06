@@ -40,7 +40,10 @@ print('=' * 80)
 results.append(benchmark(clf, target_names, X_train, y_train, X_test, y_test, False, False))
 print(results)
 
-crime = "Pedofilia, Propina, Corrupção Ativa, Atear fogo em pessoas, Estupro"
+print("Testando")
+print("="*80)
+
+crime = "Pedofilia, Propina, Corrupção Ativa, Atear fogo em pessoas"
 print("Testando crime: "+crime)
 v_crime = []
 v_crime.append(crime)
@@ -48,7 +51,7 @@ v_crime.append(crime)
 X_beta_test = vectorizer.transform(v_crime)
 
 pred = clf.predict(X_beta_test)
-
-print(pred)
+print("Possível criminoso: %s" %(pred))
+print()
 
 

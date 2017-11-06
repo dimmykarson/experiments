@@ -503,6 +503,6 @@ def get_crimes(criminoso):
             break
 
 
-print(get_crimes("Salah Abdeslam"))
+
 
 
